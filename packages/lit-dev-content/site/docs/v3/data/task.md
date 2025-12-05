@@ -255,6 +255,7 @@ class MyElement extends LitElement {
   private _getDataTask = new Task(
     this,
     {
+      autoRun: false,
       task: async () => {
         const response = await fetch(`example.com/data/`);
         return response.json();
@@ -281,6 +282,7 @@ class MyElement extends LitElement {
   _getDataTask = new Task(
     this,
     {
+      autoRun: false,
       task: async () => {
         const response = await fetch(`example.com/data/`);
         return response.json();
